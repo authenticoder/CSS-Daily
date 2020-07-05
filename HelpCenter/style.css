@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #24292e;
+  color: #fff;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+/* First Section */
+
+.search {
+  grid-area: 1/1/2/3;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.search h2 {
+  margin-bottom: 15px;
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.find {
+  display: inline-block;
+  position: relative;
+}
+
+.find:before {
+  font-family: "FontAwesome";
+  content: "\f002";
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 14px;
+  font-size: 30px;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 7px;
+  width: 450px;
+  height: 50px;
+  background-color: #585b5f;
+  color: #c7c9ca;
+  padding-left: 60px;
+  font-size: 12px;
+}
+
+input[type="text"]:before {
+  content: "cool";
+}
+
+/* Second Section */
+
+.questions {
+  grid-area: 2/1/2/3;
+  border: none;
+  border-radius: 6px;
+  color: #2b3035;
+  background-color: #fff;
+  width: 70vw;
+  height: 65vh;
+  margin: 35px auto 50px auto;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  height: 230px;
+  width: 60vw;
+  margin: 30px auto 0 auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.btn {
+  border: 2px solid #eeeeee;
+  border-radius: 6px;
+  width: 200px;
+  height: 50px;
+  background: transparent;
+  font-size: 13px;
+}
+
+.links {
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+.contacts {
+  background-color: #f3f5f7;
+  width: 60vw;
+  height: 18vh;
+  margin: 30px auto -60px auto;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contact {
+  border: none;
+  border-radius: 6px;
+  width: 170px;
+  height: 45px;
+  background-color: #24292e;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 10px 50px #24292e;
+}
